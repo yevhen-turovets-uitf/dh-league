@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body,html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.app{
+    min-height: 100%;
+    background-image: url('./img/fon.svg');
+    background-size: cover;
+    background-position: top center;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+.header__logo{
+    margin-right: 50px;
+}
+.header__logo img{
+    width: 92px;
+    height: 92px;
+}
+.header{
+    background-color: rgba(186,162,98,0.9);
+    padding: 7px 0;
+}
+.wrap{
+    max-width: 1366px;
+    padding: 0 15px;
+    width: 100%;
+    margin: 0 auto;
+}
+.content{
+    margin: 0 auto;
+    padding-top: 80px;
+    max-width: 1120px;
+    width: 100%;
+    padding-bottom: 80px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.frame{
+    min-height: 472px;
+    width: 100%;
+    border: 3px solid #fff;
+    background-color: transparent;
+}
+.header__wrap{
+    display: flex;
+    align-items: center;
+}
+.header__nav ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.header__nav li{
+    margin-right: 46px;
+    list-style: none;
+}
+.header__nav a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
+    font-size: 25px;
+}
+.header__nav a:hover{
+    text-decoration: underline;
+}
+.burger{
+    display: none;
+}
+.burger .close{
+    display: none;
+}
+.burger.active .close{
+    display: block;
+}
+
+.burger.active .open{
+    display: none;
+}
+
+@media(max-width: 991px){
+    .header__nav{
+        position: fixed;
+        top: 64px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow-y: auto;
+        background-color: rgba(186,162,98,1);
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: none;
+        
+    }
+    .header.active .header__nav{
+        display: block;
+    } 
+    .header.active{
+        background-color: rgba(186,162,98,1);
+    }
+    .header__nav ul{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .header__nav li{
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+    .header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    .header__logo img{
+        width: 50px;
+        height: 50px;
+    }
+    .burger{
+        display: flex;;
+        align-content: center;
+        justify-content: center;
+        background-color: transparent;
+        border: 0;
+        padding: 5px;
+    }
+    .header__wrap{
+        justify-content: space-between;
+    }
+    .content{
+        padding-top: 100px;
+    }
+}
