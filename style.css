@@ -48,13 +48,80 @@ img{
     padding-bottom: 80px;
     padding-left: 15px;
     padding-right: 15px;
+    color: #fff;
 }
+
+.content h1 {
+    text-align: center;
+}
+
+.content a {
+    color: #fff;
+    font-weight: bold;
+}
+
+.middle-content {
+    width: 70%;
+}
+
+.small-content {
+    width: 50%;
+}
+
+.tour {
+   text-align: center;
+}
+
+.tour table {
+    margin: 0 auto;
+    width: 70%;
+}
+
 .frame{
     min-height: 472px;
     width: 100%;
     border: 3px solid #fff;
     background-color: transparent;
 }
+
+table {
+    border-spacing: 0px;
+    border-collapse: collapse;
+    margin: 0 auto;
+    border: 0px solid #fff;
+}
+
+td {
+    margin: 0px;
+    padding: 10px;
+    border: 1px solid #fff;
+}
+
+.logo-m {
+    vertical-align: middle;
+    display: inline-block;
+    margin: 5px;
+}
+
+.organizator {
+    padding: 5px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.org-desc {
+    margin-top: 15px;
+}
+
+.rating td {
+    padding: 12px;
+}
+
+.rating thead td {
+    font-weight: bold;
+    text-align: center;
+}
+
 .header__wrap{
     display: flex;
     align-items: center;
